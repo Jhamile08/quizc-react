@@ -82,3 +82,9 @@
 .quiz-btn:hover {
     background-color: #0056b3;
 }
+
+@media screen and (max-width: 768px) {
+    .quiz-card {
+        width: 230px;
+    }
+}
