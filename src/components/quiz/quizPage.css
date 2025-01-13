@@ -1,0 +1,50 @@
+.container-question {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.content-question {
+    width: 70%;
+}
+
+.style-answer {
+    padding: 0;
+}
+
+
+.style-answer li {
+    transition: border 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    list-style: none;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f4f4f4;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Hover effect */
+.style-answer li:hover {
+    padding: 20px;
+    background-color: #f4f4f4;
+    /* Fondo ligeramente más oscuro */
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 12px;
+    /* Sombra más pronunciada */
+    transform: scale(1.05);
+
+}
+
+/* Estado cuando se selecciona la respuesta (con borde verde o rojo) */
+.style-answer li.correct {
+    border: 2px solid #008000;
+    box-shadow: #008000 0px 6px 12px;
+    /* Borde verde para respuesta correcta */
+}
+
+.style-answer li.incorrect {
+    border: 2px solid #b91f1f;
+    box-shadow: #b91f1f 0px 6px 12px;
+    /* Borde rojo para respuesta incorrecta */
+}
