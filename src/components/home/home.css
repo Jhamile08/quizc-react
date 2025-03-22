@@ -1,29 +1,31 @@
+/* Modal */
 .modal {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7); /* Más oscuro para mayor contraste */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .modal-content {
-    background-color: white;
+    background-color: #1e1e1e; /* Fondo oscuro */
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 300px;
+    color: #ffffff; /* Texto claro */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
-/* cards quizzes */
+/* Cards de quizzes */
 .quiz-list {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
     gap: 2rem;
     padding: 0;
     list-style: none;
@@ -31,10 +33,10 @@
 
 .quiz-card {
     width: 380px;
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: #2b2b2b; /* Fondo oscuro */
+    border: 1px solid #444; /* Borde más definido */
     border-radius: 2rem;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra más sutil */
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     padding: 20px;
@@ -44,7 +46,7 @@
 
 .quiz-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra más fuerte en hover */
 }
 
 .quiz-img {
@@ -58,16 +60,17 @@
 .quiz-title {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #333;
+    color: #ffffff; /* Texto claro */
     margin-bottom: 10px;
 }
 
 .quiz-description {
     font-size: 1rem;
-    color: #555;
+    color: #cccccc; /* Color gris para mejor contraste */
     margin-bottom: 15px;
 }
 
+/* Botón */
 .quiz-btn {
     padding: 10px 20px;
     font-size: 1rem;
@@ -76,13 +79,15 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .quiz-btn:hover {
     background-color: #0056b3;
+    transform: scale(1.05);
 }
 
+/* Responsive */
 @media screen and (max-width: 768px) {
     .quiz-card {
         width: 230px;

@@ -13,38 +13,41 @@
     padding: 0;
 }
 
-
 .style-answer li {
     transition: border 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
     list-style: none;
     padding: 20px;
     margin: 20px 0;
-    background-color: #f4f4f4;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #2b2b2b; /* Fondo oscuro */
+    color: #ffffff; /* Texto claro */
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 3px 8px;
     cursor: pointer;
     border-radius: 5px;
 }
 
 /* Hover effect */
 .style-answer li:hover {
-    padding: 20px;
-    background-color: #f4f4f4;
-    /* Fondo ligeramente más oscuro */
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 12px;
-    /* Sombra más pronunciada */
+    background-color: #3b3b3b; /* Color más claro para efecto hover */
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 6px 12px;
     transform: scale(1.05);
-
 }
 
-/* Estado cuando se selecciona la respuesta (con borde verde o rojo) */
+/* Estado cuando se selecciona la respuesta */
 .style-answer li.correct {
-    border: 2px solid #008000;
-    box-shadow: #008000 0px 6px 12px;
-    /* Borde verde para respuesta correcta */
+    border: 2px solid #00b894; /* Verde llamativo */
+    box-shadow: #00b894 0px 6px 12px;
+    background-color: rgba(0, 184, 148, 0.2);
 }
 
 .style-answer li.incorrect {
-    border: 2px solid #b91f1f;
-    box-shadow: #b91f1f 0px 6px 12px;
-    /* Borde rojo para respuesta incorrecta */
+    border: 2px solid #d63031; /* Rojo vibrante */
+    box-shadow: #d63031 0px 6px 12px;
+    background-color: rgba(214, 48, 49, 0.2);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .content-question {
+        width: 90%;
+    }
 }
