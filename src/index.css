@@ -3,9 +3,9 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color-scheme: dark;
+  color: #ffffff; /* Letra blanca */
+  background-color: #242424; /* Fondo oscuro */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,11 +15,12 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #8fa2ff; /* Enlaces más visibles */
   text-decoration: inherit;
 }
+
 a:hover {
-  color: #535bf2;
+  color: #b0c5ff;
 }
 
 body {
@@ -28,11 +29,12 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #242424;
+  color: #ffffff; /* Asegurar que el texto sea visible */
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+h1, h2, p {
+  color: #ffffff; /* Asegurar que los textos sean blancos */
 }
 
 button {
@@ -42,13 +44,17 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #333; /* Botón más claro para contraste */
+  color: #ffffff;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s, background-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
+  background-color: #444; /* Botón un poco más claro al pasar el mouse */
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -59,10 +65,13 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+  
   a:hover {
     color: #747bff;
   }
+  
   button {
     background-color: #f9f9f9;
+    color: #213547;
   }
 }
