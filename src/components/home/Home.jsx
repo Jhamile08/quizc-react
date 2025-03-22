@@ -35,6 +35,7 @@ function Home() {
     if (quizzes.length === 0) {
         return <>
             <h1>Loading quizz...</h1>
+            <Link to={`create/quiz`}>Create test</Link>
         </>
     }
 
